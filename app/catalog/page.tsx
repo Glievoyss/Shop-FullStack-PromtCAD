@@ -78,7 +78,7 @@ export default async function CatalogPage({
           <aside className="w-64 shrink-0 hidden md:block">
             <CatalogFilters
               categories={(categories as Category[]) ?? []}
-              searchParams={searchParams}
+              searchParams={searchParams as any}
             />
           </aside>
 
